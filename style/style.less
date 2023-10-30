@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Playpen_Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf);
+  }
+@colorText: #a276ff;
+@fontOswald: "Oswald", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto', sans-serif;
+html {
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem; // 16px
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.body-bg{
+    display: flex;
+    background-color: #1b1d3a91;
+}
+
+.main-header {
+    background-color: #0b0b0da7;
+    display: inline-flex; // занмать высоту и ширину тег header
+    padding-left: 93px;
+    padding-right: 154px;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.logo {
+margin: 80px 0 0 0;
+font-size: 3rem;
+text-transform: uppercase;
+font-family: @fontOswald;
+font-weight: 700;
+
+		// .logo__text
+
+		&__text {
+        color: @colorText;
+		}
+}
+
+.block-nav {
+    margin-top: 47px;
+}
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-item {
+font-family: @fontOswald;
+
+		// .nav-item__link
+		&__link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 17px;
+            line-height: 94px;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                color:@colorText;
+            }
+		}
+        
+}
+.block-support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: @fontOswald;
+    font-size: 17px;
+    flex-grow: 1;
+}
+.support {
+    margin-bottom: 47px;
+    // .support__link
+    
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.contact {
+    // .contact__link
+    
+    &__link {
+            text-decoration: none;
+            color: #fff;
+		}
+}
+
+
+// .sabyr-main {
+// }
+
+// .social {
+// }
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 200px;
+    margin-left: 207px
+}
+.main-title {
+    font-family: @fontOswald;
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    width: 50%;
+    span {
+        font-size: 65px;
+        color: @colorText;
+        letter-spacing: 12px;
+    }
+}
+.main-description {
+    margin-top: 42px;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+.btn {
+    background-color: transparent;
+    border-radius: 17px;
+    border: 2px solid #fff;
+    padding: 20px 60px;
+}
+.main-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+ctrl +S
